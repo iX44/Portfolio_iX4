@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-screen" class="loading-screen">
+    <div class="loading-text">LOADING</div>
+    <div class="loading-dots">
+      <div class="loading-dot"></div>
+      <div class="loading-dot"></div>
+      <div class="loading-dot"></div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header id="header" class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <a href="#">PORTFOLIO</a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-desktop">
+          <ul>
+            <li><a href="#home" class="nav-link active">home</a></li>
+            <li><a href="#about" class="nav-link">about</a></li>
+            <li><a href="#projects" class="nav-link">projects</a></li>
+            <li><a href="#contact" class="nav-link">contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button class="menu-toggle" id="menu-toggle">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <nav class="nav-mobile" id="nav-mobile">
+      <ul>
+        <li><a href="#home" class="nav-link">home</a></li>
+        <li><a href="#about" class="nav-link">about</a></li>
+        <li><a href="#projects" class="nav-link">projects</a></li>
+        <li><a href="#contact" class="nav-link">contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <h1>JOHN <span>DOE</span></h1>
+          <p>Creative Developer & Designer</p>
+          <div class="divider"></div>
+        </div>
+      </div>
+      <button class="scroll-down" id="scroll-down">
+        <i data-lucide="arrow-down"></i>
+      </button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2 class="section-title">ABOUT ME</h2>
+
+        <div class="about-content">
+          <div class="about-image">
+            <div class="image-container">
+              <img src="https://placehold.co/320x400" alt="John Doe">
+            </div>
+          </div>
+
+          <div class="about-text">
+            <h3>Hello, I'm John Doe</h3>
+            <p>I'm a creative developer and designer with a passion for building beautiful, functional digital experiences. With over 5 years of experience in the industry, I specialize in web development, UI/UX design, and creative coding.</p>
+            <p>My approach combines technical expertise with creative thinking to deliver solutions that not only look great but also perform exceptionally well. I believe in clean, efficient code and thoughtful, user-centered design.</p>
+
+            <div class="skills-container">
+              <div class="skills-column">
+                <h4>Skills</h4>
+                <ul>
+                  <li>Web Development</li>
+                  <li>UI/UX Design</li>
+                  <li>Creative Coding</li>
+                  <li>3D Modeling</li>
+                </ul>
+              </div>
+              <div class="skills-column">
+                <h4>Tools</h4>
+                <ul>
+                  <li>HTML/CSS/JavaScript</li>
+                  <li>Three.js / WebGL</li>
+                  <li>Figma / Adobe Suite</li>
+                  <li>Blender</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2 class="section-title">PROJECTS</h2>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://placehold.co/800x600" alt="Immersive 3D Portfolio">
+              <div class="project-card-content">
+                <span class="project-category">Web Development</span>
+                <h3 class="project-title">Immersive 3D Portfolio</h3>
+                <p class="project-description">An interactive 3D portfolio website built with Three.js and vanilla JavaScript.</p>
+                <div class="project-links">
+                  <a href="#" class="project-link">
+                    <i data-lucide="external-link"></i> Live Demo
+                  </a>
+                  <a href="#" class="project-link">
+                    <i data-lucide="github"></i> Source Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://placehold.co/800x600" alt="E-Commerce Platform">
+              <div class="project-card-content">
+                <span class="project-category">Web Development</span>
+                <h3 class="project-title">E-Commerce Platform</h3>
+                <p class="project-description">A modern e-commerce platform with a custom CMS and payment integration.</p>
+                <div class="project-links">
+                  <a href="#" class="project-link">
+                    <i data-lucide="external-link"></i> Live Demo
+                  </a>
+                  <a href="#" class="project-link">
+                    <i data-lucide="github"></i> Source Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://placehold.co/800x600" alt="AI Content Generator">
+              <div class="project-card-content">
+                <span class="project-category">Web Application</span>
+                <h3 class="project-title">AI Content Generator</h3>
+                <p class="project-description">An AI-powered content generation tool for marketers and content creators.</p>
+                <div class="project-links">
+                  <a href="#" class="project-link">
+                    <i data-lucide="external-link"></i> Live Demo
+                  </a>
+                  <a href="#" class="project-link">
+                    <i data-lucide="github"></i> Source Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://placehold.co/800x600" alt="Crypto Dashboard">
+              <div class="project-card-content">
+                <span class="project-category">Web Application</span>
+                <h3 class="project-title">Crypto Dashboard</h3>
+                <p class="project-description">A real-time cryptocurrency dashboard with advanced analytics.</p>
+                <div class="project-links">
+                  <a href="#" class="project-link">
+                    <i data-lucide="external-link"></i> Live Demo
+                  </a>
+                  <a href="#" class="project-link">
+                    <i data-lucide="github"></i> Source Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://placehold.co/800x600" alt="Mobile Banking App">
+              <div class="project-card-content">
+                <span class="project-category">UI/UX Design</span>
+                <h3 class="project-title">Mobile Banking App</h3>
+                <p class="project-description">A comprehensive UI/UX design for a mobile banking application.</p>
+                <div class="project-links">
+                  <a href="#" class="project-link">
+                    <i data-lucide="external-link"></i> Live Demo
+                  </a>
+                  <a href="#" class="project-link">
+                    <i data-lucide="github"></i> Source Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://placehold.co/800x600" alt="Smart Home Interface">
+              <div class="project-card-content">
+                <span class="project-category">UI/UX Design</span>
+                <h3 class="project-title">Smart Home Interface</h3>
+                <p class="project-description">A user-friendly interface for controlling smart home devices.</p>
+                <div class="project-links">
+                  <a href="#" class="project-link">
+                    <i data-lucide="external-link"></i> Live Demo
+                  </a>
+                  <a href="#" class="project-link">
+                    <i data-lucide="github"></i> Source Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title">CONTACT</h2>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i data-lucide="mail"></i>
+              </div>
+              <h3>Email</h3>
+              <a href="mailto:hello@example.com">hello@example.com</a>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i data-lucide="map-pin"></i>
+              </div>
+              <h3>Location</h3>
+              <p>New York, NY</p>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i data-lucide="phone"></i>
+              </div>
+              <h3>Phone</h3>
+              <a href="tel:+1234567890">+1 (234) 567-890</a>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="#" class="social-link">
+              <i data-lucide="github"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i data-lucide="linkedin"></i>
+            </a>
+            <a href="#" class="social-link">
+              <i data-lucide="twitter"></i>
+            </a>
+          </div>
+
+          <form class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" placeholder="Name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Email" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Message" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="submit-button">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="current-year"></span> John Doe. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
